@@ -1,0 +1,82 @@
+/* ************************************************************************** */
+/*                                    FONT                                    */
+/* ************************************************************************** */
+@font-face {
+	font-family: "Norse";
+	src: url(font/norse/norse-webfont.woff2) format(woff2),
+		url("font/norse/norse-webfont.woff") format(woff);
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Norse Bold";
+	src: url("font/norse/norsebold-webfont.woff2") format(woff2),
+		url("font/norse/norsebold-webfont.woff") format(woff);
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                               GENERAL DISPLAY                              */
+/* ************************************************************************** */
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+.side-container {
+	display: flex;
+	position: relative;
+}
+
+/* ************************** LEAF BACKGROUND IMAGE ************************* */
+#leaf-image {
+	width: 100%;
+	height: 100vh;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	position: relative;
+}
+
+figcaption {
+	position: absolute;
+	padding-bottom: 1em;
+}
+
+figcaption, figcaption a {
+	color: lightgrey;
+}
+
+/* ******************************* ODIN BANNER ****************************** */
+.side-container > div {
+	/* Design */
+	font-family: "Norse Bold", Arial, Helvetica, sans-serif;
+	font-size: 6em;
+	color: white;
+	background-color: rgb(0, 0, 0, 0.5);
+
+	/* External positioning */
+	position: absolute;
+	width: 100%;
+	margin-top: 50%;
+
+	/* Internal positioning */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0 1rem 0;
+}
+
+#odin-image {
+	height: 1.25em; /*relative to font-size of the banner */
+}
