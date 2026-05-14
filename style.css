@@ -28,6 +28,9 @@ body {
 	flex-direction: row;
 }
 
+/* ************************************************************************** */
+/*                               SIDE CONTAINER                               */
+/* ************************************************************************** */
 .side-container {
 	display: flex;
 	position: relative;
@@ -79,4 +82,31 @@ figcaption, figcaption a {
 
 #odin-image {
 	height: 1.25em; /*relative to font-size of the banner */
+}
+
+/* ************************************************************************** */
+/*                               MAIN CONTAINER                               */
+/* ************************************************************************** */
+#form-header,
+form p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.italic {
+	font-style: italic;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+main div {
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 0 5ch 0 5ch;
+	max-width: 60ch;
 }
