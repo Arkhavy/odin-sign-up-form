@@ -25,7 +25,6 @@
 /* ************************************************************************** */
 body {
 	display: flex;
-	flex-direction: row;
 	line-height: 1.2;
 	background-color: rgb(245, 245, 245);
 }
@@ -76,7 +75,6 @@ figcaption, figcaption a {
 
 	/* Internal positioning */
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	padding: 1rem 0 1rem 0;
@@ -140,7 +138,6 @@ form p {
 
 fieldset {
 	display: flex;
-	flex-direction: row;
 }
 
 fieldset div {
@@ -183,18 +180,18 @@ main a {
 	text-decoration: none;
 }
 
+input:focus {
+	outline: none;
+	border: 2px solid blue;
+	box-shadow: 5px 5px 5px lightgrey;
+}
+
 input:user-invalid {
 	border: 2px solid red;
 }
 
 input:user-valid {
 	border: 2px solid green;
-}
-
-input:focus {
-	outline: none;
-	border: 2px solid blue;
-	box-shadow: 5px 5px 5px lightgrey;
 }
 
 #password-rule {
